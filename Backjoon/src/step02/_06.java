@@ -15,8 +15,13 @@ public class _06 {
 		int M = sc.nextInt();
 		int C = sc.nextInt();
 		
-		if (((M+C)/60)>=1) {
+		if (((M+C)/60)>=1 && (H+((M+C)/60)<24)) {
+			
 			System.out.println((H+((M+C)/60))+" "+((M+C)%60));
+			
+		}else if (((M+C)/60)>=1 && (H+((M+C)/60)>=24)) {
+			
+			System.out.println((H+((M+C)/60)-24)+" "+((M+C)%60));
 			
 		}else if(((M+C)/60)==0) {
 			System.out.println(H+" "+((M+C)%60));
