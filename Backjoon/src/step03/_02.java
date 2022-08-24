@@ -9,20 +9,24 @@ import java.util.Scanner;
  */
 public class _02 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in);
 		
-		for(int i=1;i<=5;i++) {
+		Scanner sc = new Scanner (System.in);
+		int T = sc.nextInt();
+		int arr[] = new int[T];
+		
+		for(int j=0;j<T;j++) {
 		
 		
 		int A = sc.nextInt();
 		int B = sc.nextInt();
-		
-		if(i==5) {
-			System.out.println(A+B);
+		arr[j] = A+B;
 		}
 		
-		}
 		
+		for(int result : arr) {
+			System.out.println(result);
+		}
+		sc.close();
 	}
 
 }
