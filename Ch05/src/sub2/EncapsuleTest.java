@@ -1,7 +1,4 @@
 package sub2;
-
-import sub1.Account;
-
 /*
  * 날짜 : 2022/08/24
  * 이름 : 구홍모
@@ -29,10 +26,8 @@ public class EncapsuleTest {
 		sonata.speedDown(20);
 		sonata.show();
 		
-		// Account 객체 생성
+		// Account 객체 생성 및 초기화
 		Account2 kb = new Account2("국민은행","111-11-1111","김유신", 0);
-		
-		// 초기화
 		
 		
 		// 기능

@@ -32,6 +32,7 @@ public class SwitchTest {
 			
 			
 		}
+		sc.close();
 	}
 
 }
