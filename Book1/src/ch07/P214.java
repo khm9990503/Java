@@ -13,6 +13,16 @@ public class P214 {
 		for(int i=0;i<bookArray2.length;i++) {
 			bookArray2[i].showBookInfo();
 		}
+		
+		System.out.println("=== bookArray1 ===");
+		bookArray1[0].setBookName("나목");
+		bookArray1[0].setAuthor("박완서");
+		
+		System.out.println("=== bookArray2 ===");
+		for(int i=0;i<bookArray2.length;i++) {
+			bookArray2[i].showBookInfo();
+		}
+		
 	}
 
 }

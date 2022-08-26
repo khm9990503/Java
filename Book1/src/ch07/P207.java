@@ -20,6 +20,9 @@ public class P207 {
 	public String getAuthor() {
 		return author;
 	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
 	public void showBookInfo() {
 		System.out.println(bookName +","+author);
 	}

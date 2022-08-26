@@ -27,7 +27,7 @@ public class _07 {
 		
 		
 		for(int r=0;r<arr.length;r++) {
-			System.out.println("Case #"+r+": "+arr[r]);
+			System.out.println("Case #"+(r+1)+": "+arrA[r]+" + "+arrB[r]+" = "+arr[r]);
 		}
 		sc.close();
 	}
