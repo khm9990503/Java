@@ -1,29 +1,27 @@
 package step03;
 
-import java.util.Scanner;
+import java.io.*;
 
-/*
- * 날짜 : 2022/08/30
- * 이름 : 구홍모
- * 내용 : 3단계 13번 - 더하기 사이클
- */
-public class _13 {
-	
-		public static void main(String[] args) {	
-			Scanner sc = new Scanner(System.in);
-			int n = sc.nextInt();
-			int x = (n/10+n%10)%10;
-			int r = x+((n%10)*10);
-			int c = 0;
-			while(true) {
-				if(n==r) {
-					c++;
-					break;
-				}
-				c++;
-			
-				
-			}
-			
-		}
+public class _13{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        int N = Integer.parseInt(br.readLine());
+        
+        int count = 0;
+        int temp = N;
+        int sum = 0;
+        do{
+            count ++;
+            sum = temp/10+temp%10;
+            temp = temp%10*10 + sum%10;
+        }while(N!=temp);
+        
+        bw.write(Integer.toString(count));
+        
+        bw.flush();
+        bw.close();
+        br.close();
+    }
 }
