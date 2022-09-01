@@ -1,6 +1,7 @@
 package step04;
 
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 /*
  * 날짜 : 2022/08/31
@@ -8,29 +9,29 @@ import java.util.Scanner;
  * 내용 : 4단계 1번 - 최소, 최대
  */
 public class _01 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in);
-		int N = sc.nextInt();
-		int arr[] = new int[N];
-		int Max = arr[0];
-		int Min = arr[0];
-		
-		for(int i=0 ; i<N ; i++) {
-			
-			int A = sc.nextInt();
-			arr[i] = A; 
-			
-			if(Max<arr[i]) {
-				Max=arr[i];
-			}
-			if(Min>arr[i]) {
-				Min=arr[i];
-			}
-		}
-		
-		System.out.println(Min+" "+Max);
-		
-		sc.close();
-	}
+		public static void main(String[] args) throws IOException {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			int n = Integer.parseInt(br.readLine());
+			StringTokenizer stk = new StringTokenizer(br.readLine());
+			br.close();
 
-}
+			int max = Integer.parseInt(stk.nextToken());
+			int min = max;
+			
+
+			for(int i = 0; i < n - 1; i++) {
+				int temp = Integer.parseInt(stk.nextToken());
+				if(temp > max) {
+					max = temp;
+				} else if(temp < min) {
+					min = temp;
+				} else {
+					continue;
+				}
+			}
+	       
+			 
+				System.out.println(min + " " + max);
+			
+		}
+	}
