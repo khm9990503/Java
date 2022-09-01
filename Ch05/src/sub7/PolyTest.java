@@ -39,7 +39,7 @@ public class PolyTest {
 		eagle.move();
 		shark.move();
 		
-		//객체 타입 연산
+		//객체 타입 연산   (객체 + instanceof + 클레스 : true or false) 즉, 객체의 참조변수의 타입을 알아내기 위해 사용함.
 		if(a1 instanceof Tiger) {
 			System.out.println("a1은 Tiger입니다.");
 		}
