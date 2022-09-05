@@ -8,7 +8,7 @@ interface Seller{
 	public void sell();
 }
 
-class Customers implements Buyer, Seller{
+class Customers implements Buyer, Seller {
 
 	@Override
 	public void sell() {
