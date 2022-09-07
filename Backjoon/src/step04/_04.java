@@ -16,7 +16,7 @@ public class _04 {
 		int m = 0;
 		double sum = 0;
 		double c = (double)n;
-		double avg = (double)sum/c;
+		
 		
 		for(int i=0;i<n;i++) {
 			int s = sc.nextInt();
@@ -34,10 +34,10 @@ public class _04 {
 			arr2[k]=(double)(arr[k])/m*100;
 			sum+=(double)arr2[k];
 		}
+		double avg = (double)sum/c;
 		
-		System.out.println(sum);
 		System.out.println(avg);
-		
+		sc.close();
 	}
 
 }
