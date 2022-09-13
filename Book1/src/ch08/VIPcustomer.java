@@ -25,6 +25,10 @@ public class VIPcustomer extends Customer {
 		return price - (int)(price*saleRatio);
 	}
 	
+	public String showCustomerInfo() {
+			return super.showCustomerInfo() + "담당 상담원 번호는 "+ agentId + "입니다.";
+	}
+	
 	public int getAgentId() {
 		return agentId;
 	}
