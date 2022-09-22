@@ -25,7 +25,6 @@ public class HelloSwing {
 		frame.pack();
 		frame.setVisible(true);
 		
-		
 	}
 
 }
