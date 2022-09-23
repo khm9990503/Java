@@ -8,6 +8,14 @@ public class MemberHashSetTest {
 		Member memberSon = new Member(1002, "손민국");
 		Member memberPark = new Member(1003, "박서훤");
 		
+		memberHashSet.addMember(memberLee);
+		memberHashSet.addMember(memberPark);
+		memberHashSet.addMember(memberSon);
+		memberHashSet.showAllMember();
+		
+		Member memberHong = new Member(1003, "홍길동");
+		memberHashSet.addMember(memberHong);
+		memberHashSet.showAllMember();
 		
 	}
 
